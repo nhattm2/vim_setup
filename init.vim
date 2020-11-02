@@ -45,6 +45,11 @@ Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-rhubarb' " required by fugitive to :Gbrowse
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"flutter
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
+Plug 'thosakwe/vim-flutter'
 
 "Custom plugin
 Plug 'tpope/vim-markdown'
@@ -644,4 +649,8 @@ endfunction
 " nhattm2 custom
 noremap <C-s> :w<CR>
 xnoremap p pgvy
-
+"" Tabs. May be overridden by autocmd rules
+set tabstop=2
+set softtabstop=0
+set shiftwidth=2
+set expandtab
